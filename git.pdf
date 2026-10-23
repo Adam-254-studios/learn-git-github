@@ -1,0 +1,44 @@
+Using git & github is simple.It is just a matter of simple commands and pattern. In this session, we'll learn how to use git & github from scratch.
+
+#First let's learn how to install git in your machine, remember Kali linux comes with git pre-installed.
+
+#First we start with configuration commands, in your terminal run this commands sequentially. 
+1.git config --global user.name "Adamstudios"
+2.git config --global user.email "ombatijoseck29@gmail.com"
+
+#Initializing a project we use 'git init' command. That is 'git init -b main (This creates a local git repository with a branch name main. Remember that you only need to initialize your project once.)
+1.git init -b main
+
+#check status using 'git status' command to see te files listed as untracked.
+1.git status
+
+#Next you need to stage your files. Here we use "git add' command, that is 'git add file dir/name'
+Example...git add git-practice/git.pdf
+
+(check status again using 'git status' command)
+
+#Next we commit our changes. Here we use 'git commit -m' command.
+example...git commit -m "we documented our first git project"
+
+#Next you can inspect the history by using the 'git log --oneline' command. That is git log --oneline.
+
+*************************How to push your local project to github*********************
+Step1.First create a repository on the github account. It can be done through the terminal but using a github account is easy and faster.
+
+Step2.You change the directory to the one containing your project.
+
+Step3.Check the repository and commit history.
+Example...git status && git log --oneline (sequentially)
+
+Step4.git add <your document> e.g gitpdf
+
+Step5.git commit -m "Add some information regarding the project"
+
+Step6.You connect to your existing repository. First check whether a remote is already configured:
+Example...git remote -v
+If nothing appears, add your repository URL: git remote add origin https:github.com/your username/repository name.git
+
+#remember to replace your username with the actual username in your github account, the same to the repository name.
+
+Step6.Now push to github.
+Example...git push -u main (If your branch has another name check using 'git branch --show-current')
